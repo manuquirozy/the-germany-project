@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+
+.hamburg__page {
+  @include background("../../../public/hamburg.jpg");
+
+  h1 {  
+    @include title1;
+  }
+}

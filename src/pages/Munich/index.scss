@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+
+.munich__page {
+  @include background("../../../public/munich.webp");
+
+  h1 {  
+    @include title1;
+  }
+}

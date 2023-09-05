@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from 'react-router-dom';
+import HamburgerMenu from './components/HamburgerMenu';
+import Berlin from './pages/Berlin';
+import Hamburg from './pages/Hamburg';
+import Home from './pages/Home';
+import Freiburg from './pages/Freiburg';
+import Munich from './pages/Munich';
+import Nuremberg from './pages/Nuremberg';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <HamburgerMenu />
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/berlin" element={<Berlin />} />
+          <Route path="/freiburg" element={<Freiburg />} />
+          <Route path="/hamburg" element={<Hamburg />} />
+          <Route path="/munich" element={<Munich />} />
+          <Route path="/nuremberg" element={<Nuremberg />} />
+       </Routes>
     </div>
   );
 }

@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  nav {
+    align-items: flex-end;
+  }
+
+  ul {
+    list-style: none;
+    padding: 1rem;
+    text-align: right;
+  }
+
+  li {
+    margin: 0.5rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__button {
+    width: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &--open {
+      background-color: transparent;
+    }
+  }
+
+  &--open {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: fit-content;
+    float: right;
+    padding-top: 2rem;
+    position: absolute;
+    right: 0;
+  }
+}

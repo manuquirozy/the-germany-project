@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+
+.nuremberg__page {
+  @include background("../../../public/nuremberg.jpg");
+
+  h1 {  
+    @include title1;
+  }
+}
+

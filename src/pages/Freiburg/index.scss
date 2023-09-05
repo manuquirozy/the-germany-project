@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+
+.freiburg__page {
+  @include background("../../../public/freiburg.webp");
+
+  h1 {  
+    @include title1;
+  }
+}

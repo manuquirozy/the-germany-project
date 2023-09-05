@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+
+.home__page {
+  @include background("../../../public/airport.jpg");
+
+  h1 {  
+    @include title1;
+  }
+}

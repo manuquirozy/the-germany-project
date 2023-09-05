@@ -1,0 +1,16 @@
+@mixin background($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin title1() {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 1.5rem;
+}
